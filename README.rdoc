@@ -1,11 +1,10 @@
-# README
+== README
 
-### Initialization
-<tt>bundle install</tt>
-<tt>bundle exec rake db:migrate</tt>
+==== Initialization
+Simply run <tt>bundle install</tt>, <tt>bundle exec rake db:migrate</tt> and <tt>bundle exec rails s</tt>
 
-### Usage
-Create a couple of phrases at: <tt>localhost:3000/phrases</tt>
+==== Usage
+Manage your phrases at: <tt>../phrases</tt>
 
-### API
+==== API
 Access phrases via: <tt>../api/v1/phrases/:id</tt>
