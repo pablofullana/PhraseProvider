@@ -7,4 +7,4 @@ Simply run <tt>bundle install</tt>, <tt>bundle exec rake db:migrate</tt> and <tt
 Manage your phrases at: <tt>../phrases</tt>
 
 ==== API
-Access phrases via: <tt>../api/v1/phrases/:id</tt> or from a terminal session by just running <tt>curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:3000/api/v1/phrases/1</tt> (make sure you target your server)
+Access phrases via: <tt>../api/v1/phrases/:id</tt> or from a terminal session by just running <tt>curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:3000/api/v1/phrases/1</tt> (make sure you target your server and provide the proper phrase id)
