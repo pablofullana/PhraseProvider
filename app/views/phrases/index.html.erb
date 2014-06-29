@@ -1,0 +1,31 @@
+<h1>Listing phrases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Author</th>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @phrases.each do |phrase| %>
+      <tr>
+        <td><%= phrase.content %></td>
+        <td><%= phrase.author %></td>
+        <td><%= phrase.language %></td>
+        <td><%= link_to 'Show', phrase %></td>
+        <td><%= link_to 'Edit', edit_phrase_path(phrase) %></td>
+        <td><%= link_to 'Destroy', phrase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Phrase', new_phrase_path %>
