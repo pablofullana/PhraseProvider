@@ -1,3 +1,11 @@
-== README
+# README
 
-`Just pending...`
+### Initialization
+<tt>bundle install</tt>
+<tt>bundle exec rake db:migrate</tt>
+
+### Usage
+Create a couple of phrases at: <tt>localhost:3000/phrases</tt>
+
+### API
+Access phrases via: <tt>../api/v1/phrases/:id</tt>
