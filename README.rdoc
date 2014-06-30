@@ -3,6 +3,9 @@
 === Initialization
 Simply run <tt>bundle install</tt>, <tt>bundle exec rake db:migrate</tt> and <tt>bundle exec rails s</tt>
 
+=== Seed
+You can get your database feeded with a reasonable number of phrases by simply running <tt>bundle exec rake db:seed</tt>
+
 === Usage
 Manage your phrases at: <tt>../phrases</tt>
 
