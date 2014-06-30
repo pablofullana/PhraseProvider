@@ -1,9 +1,13 @@
 PhraseProvider::Application.routes.draw do
-  resources :phrases
+  resources :phrases do
+    get 'random', on: :collection
+  end
 
   namespace :api do
     namespace :v1 do
-      resources :phrases, only: :show, defaults: {format: :json}
+      resources :phrases, only: :show, defaults: {format: :json} do
+        get 'random', on: :collection
+      end
     end
   end
 

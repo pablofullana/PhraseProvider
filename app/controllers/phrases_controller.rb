@@ -12,6 +12,13 @@ class PhrasesController < ApplicationController
   def show
   end
 
+  # GET /phrases/1
+  # GET /phrases/1.json
+  def random
+    @phrase = Phrase.random
+    render :show
+  end
+
   # GET /phrases/new
   def new
     @phrase = Phrase.new

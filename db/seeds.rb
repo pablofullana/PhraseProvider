@@ -1,7 +1,12 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# Creates between 100 and 200 Phrases from different Authors in 'Lorem' language
+puts "Creating Phrases..."
+
+rand(100...200).times do
+  Phrase.create(
+    content:  Faker::Lorem.sentence,
+    author:   Faker::Name.name,
+    language: 'Lorem'
+  )
+end
+
+puts "Created #{Phrase.all.count} Phrases."

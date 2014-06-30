@@ -1,7 +1,12 @@
 class Api::V1::PhrasesController < ApplicationController
   before_action :set_phrase, only: :show
-  
+
   def show
+  end
+
+  def random
+    @phrase = Phrase.random
+    render :show
   end
 
   private

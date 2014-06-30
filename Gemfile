@@ -32,6 +32,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  gem 'jazz_hands'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,3 +49,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'rabl'
+
+gem 'faker'
