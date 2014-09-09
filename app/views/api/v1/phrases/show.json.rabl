@@ -1,3 +1,3 @@
 object @phrase
 
-attributes :content, :author, :language
+attributes :id, :content, :author, :language
